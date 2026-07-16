@@ -46,6 +46,13 @@ const projects = [
       "Reliable multi-step workflows connecting APIs, models, business logic, validation, reporting, and human escalation.",
     tags: ["APIs", "Agents", "Production"],
   },
+  {
+    label: "Reliability",
+    title: "Aegis Incident Recovery",
+    description:
+      "Diagnoses AI and API failures, scores severity, recommends guarded recovery strategies, and returns structured incident reports.",
+    tags: ["n8n", "Incident Automation", "Webhooks"],
+  },
 ];
 
 export default function Home() {
@@ -328,8 +335,9 @@ export default function Home() {
           </div>
 
           <p>
-            Two real AI systems built around conversational experiences,
-            autonomous testing, production engineering and measurable results.
+            Three real AI systems built around conversational experiences,
+            autonomous testing, incident recovery, production engineering and
+            measurable operational value.
           </p>
         </div>
 
@@ -589,6 +597,160 @@ export default function Home() {
               <span>Reporting</span>
 
               <strong>VIEW PROJECT ↗</strong>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/adrk1728-design/aegis-autonomous-incident-recovery"
+            target="_blank"
+            rel="noreferrer"
+            className="featuredCard aegisCard"
+            aria-label="Explore Aegis Autonomous Incident Recovery Engine on GitHub"
+          >
+            <div className="featuredCardTop">
+              <div className="featuredIndex">03 / FEATURED PROJECT</div>
+
+              <div className="featuredLive">
+                <span />
+                LIVE API
+              </div>
+            </div>
+
+            <div className="featuredCardContent">
+              <div className="featuredInformation">
+                <div className="featuredProjectType">
+                  RELIABILITY AUTOMATION · INCIDENT RECOVERY
+                </div>
+
+                <h3>Aegis Incident Recovery Engine</h3>
+
+                <p>
+                  A production-style n8n system that receives AI and API
+                  failures, validates the incident, identifies the likely root
+                  cause, scores severity, selects guarded recovery strategies
+                  and returns structured incident reports through a live
+                  dashboard.
+                </p>
+
+                <div className="featuredTags">
+                  <span>n8n</span>
+                  <span>JavaScript</span>
+                  <span>Webhooks</span>
+                  <span>Incident Automation</span>
+                  <span>Reliability</span>
+                </div>
+
+                <div className="featuredExplore">
+                  View GitHub case study
+                  <span>↗</span>
+                </div>
+              </div>
+
+              <div className="featuredVisual">
+                <div className="visualBrowser aegisBrowser">
+                  <div className="visualBrowserBar">
+                    <div className="browserDots">
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+
+                    <div className="browserUrl">
+                      aegis.production.incident-engine
+                    </div>
+                  </div>
+
+                  <div className="aegisInterface">
+                    <div className="aegisMetrics">
+                      <div>
+                        <span>ROOT CAUSE</span>
+                        <strong>Rate Limit</strong>
+                      </div>
+                      <div>
+                        <span>CONFIDENCE</span>
+                        <strong>97%</strong>
+                      </div>
+                      <div>
+                        <span>SEVERITY</span>
+                        <strong>Critical</strong>
+                      </div>
+                    </div>
+
+                    <div className="aegisPipeline">
+                      <div className="aegisNode activeAegisNode">
+                        <span>01</span>
+                        <div>
+                          <strong>Incident Intake</strong>
+                          <p>Normalize and validate payload</p>
+                        </div>
+                      </div>
+
+                      <div className="aegisLine" />
+
+                      <div className="aegisNode activeAegisNode">
+                        <span>02</span>
+                        <div>
+                          <strong>Root Cause Analysis</strong>
+                          <p>Detect failure category and confidence</p>
+                        </div>
+                      </div>
+
+                      <div className="aegisLine" />
+
+                      <div className="aegisNode">
+                        <span>03</span>
+                        <div>
+                          <strong>Recovery Policy</strong>
+                          <p>Bounded exponential backoff</p>
+                        </div>
+                      </div>
+
+                      <div className="aegisLine" />
+
+                      <div className="aegisNode resultAegisNode">
+                        <span>04</span>
+                        <div>
+                          <strong>Incident Report</strong>
+                          <p>Structured actions and next step</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="aegisHealth">
+                      <div>
+                        <span>System health</span>
+                        <strong>43 / 100</strong>
+                      </div>
+                      <div className="aegisHealthTrack">
+                        <span />
+                      </div>
+                      <small>Recovery plan generated · Human-safe guardrails applied</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="floatingBadge badgeOne">
+                  <span>23</span>
+                  Meaningful workflow nodes
+                </div>
+
+                <div className="floatingBadge badgeTwo">
+                  <span>9</span>
+                  Recovery strategies
+                </div>
+              </div>
+            </div>
+
+            <div className="featuredBottom">
+              <span>Detection</span>
+              <i />
+              <span>Diagnosis</span>
+              <i />
+              <span>Recovery</span>
+              <i />
+              <span>Reporting</span>
+
+              <strong>VIEW GITHUB ↗</strong>
             </div>
           </a>
         </div>
@@ -1132,6 +1294,172 @@ export default function Home() {
           text-transform: uppercase;
         }
 
+        .aegisCard {
+          background:
+            radial-gradient(circle at 82% 18%, rgba(66, 230, 150, 0.12), transparent 36%),
+            radial-gradient(circle at 10% 90%, rgba(58, 127, 255, 0.09), transparent 35%),
+            linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
+        }
+
+        .aegisCard:hover {
+          border-color: rgba(66, 230, 150, 0.42);
+          box-shadow:
+            0 60px 150px rgba(0, 0, 0, 0.55),
+            0 0 72px rgba(66, 230, 150, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.11);
+        }
+
+        .aegisBrowser {
+          transform: rotateY(-4deg) rotateX(2deg);
+          box-shadow:
+            0 35px 90px rgba(0, 0, 0, 0.58),
+            0 0 70px rgba(66, 230, 150, 0.08);
+        }
+
+        .aegisInterface {
+          padding: 24px;
+          background:
+            radial-gradient(circle at 90% 0%, rgba(66, 230, 150, 0.12), transparent 34%),
+            #0b0e12;
+        }
+
+        .aegisMetrics {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          margin-bottom: 18px;
+        }
+
+        .aegisMetrics div {
+          padding: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 12px;
+          background: rgba(255, 255, 255, 0.025);
+        }
+
+        .aegisMetrics span,
+        .aegisMetrics strong {
+          display: block;
+        }
+
+        .aegisMetrics span {
+          color: #66707d;
+          font-size: 7px;
+          font-weight: 800;
+          letter-spacing: 0.12em;
+        }
+
+        .aegisMetrics strong {
+          margin-top: 7px;
+          color: #f4f8f6;
+          font-size: 14px;
+        }
+
+        .aegisPipeline {
+          padding: 18px;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 14px;
+          background: rgba(255, 255, 255, 0.018);
+        }
+
+        .aegisNode {
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          padding: 11px 12px;
+          border: 1px solid rgba(255, 255, 255, 0.07);
+          border-radius: 11px;
+          background: rgba(255, 255, 255, 0.02);
+        }
+
+        .aegisNode > span {
+          display: grid;
+          width: 31px;
+          height: 31px;
+          flex: 0 0 auto;
+          place-items: center;
+          color: #7ef0b3;
+          font-size: 8px;
+          font-weight: 800;
+          border: 1px solid rgba(66, 230, 150, 0.26);
+          border-radius: 9px;
+          background: rgba(66, 230, 150, 0.07);
+        }
+
+        .aegisNode strong {
+          display: block;
+          font-size: 10px;
+        }
+
+        .aegisNode p {
+          margin: 3px 0 0;
+          color: #69727d;
+          font-size: 8px;
+        }
+
+        .activeAegisNode {
+          border-color: rgba(66, 230, 150, 0.24);
+          background: rgba(66, 230, 150, 0.045);
+        }
+
+        .resultAegisNode {
+          border-color: rgba(89, 155, 255, 0.24);
+          background: rgba(89, 155, 255, 0.05);
+        }
+
+        .aegisLine {
+          width: 2px;
+          height: 11px;
+          margin-left: 28px;
+          background: linear-gradient(#42e696, rgba(255, 255, 255, 0.08));
+        }
+
+        .aegisHealth {
+          margin-top: 14px;
+          padding: 15px;
+          border: 1px solid rgba(255, 255, 255, 0.07);
+          border-radius: 12px;
+          background: rgba(255, 255, 255, 0.018);
+        }
+
+        .aegisHealth > div:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+        }
+
+        .aegisHealth span {
+          color: #858e99;
+          font-size: 9px;
+        }
+
+        .aegisHealth strong {
+          color: #ffffff;
+          font-size: 12px;
+        }
+
+        .aegisHealthTrack {
+          overflow: hidden;
+          height: 6px;
+          margin: 10px 0;
+          border-radius: 99px;
+          background: rgba(255, 255, 255, 0.06);
+        }
+
+        .aegisHealthTrack span {
+          display: block;
+          width: 43%;
+          height: 100%;
+          border-radius: inherit;
+          background: linear-gradient(90deg, #4e8cff, #42e696);
+        }
+
+        .aegisHealth small {
+          color: #636c78;
+          font-size: 7px;
+        }
+
         .floatingBadge {
           position: absolute;
           padding: 12px 14px;
@@ -1257,6 +1585,10 @@ export default function Home() {
           }
 
           .qaStats {
+            grid-template-columns: 1fr;
+          }
+
+          .aegisMetrics {
             grid-template-columns: 1fr;
           }
 
